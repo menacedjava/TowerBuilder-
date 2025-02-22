@@ -59,30 +59,30 @@ public class TowerBuilder extends JPanel implements ActionListener, KeyListener 
         }
         repaint();
     }
-//
-//    @Override
-//    public void keyPressed(KeyEvent e) {
-//        if (e.getKeyCode() == KeyEvent.VK_SPACE && !falling) {
-//            falling = true;
-//        }
-//    }
-//
-//    @Override
-//    public void keyReleased(KeyEvent e) {}
-//
-//    @Override
-//    public void keyTyped(KeyEvent e) {}
-//
-//    public static void main(String[] args) {
-//        JFrame frame = new JFrame("Tower Builder");
-//        TowerBuilder game = new TowerBuilder();
-//        frame.add(game);
-//        frame.pack();
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        frame.setVisible(true);
-//        frame.setLocationRelativeTo(null);
-//    }
-//}
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_SPACE && !falling) {
+            falling = true;
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {}
+
+    @Override
+    public void keyTyped(KeyEvent e) {}
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Tower Builder");
+        TowerBuilder game = new TowerBuilder();
+        frame.add(game);
+        frame.pack();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null);
+    }
+}
 //
 //class Block {
 //    int x, y, width, height;
