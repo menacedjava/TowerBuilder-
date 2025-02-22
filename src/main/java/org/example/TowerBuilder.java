@@ -18,19 +18,19 @@ public class TowerBuilder extends JPanel implements ActionListener, KeyListener 
     private int currentX, currentY;
     private Random rand = new Random();
 
-//    public TowerBuilder() {
-//        setPreferredSize(new Dimension(600, 600));
-//        setBackground(Color.BLACK);
-//        blocks = new ArrayList<>();
-//        currentX = baseX;
-//        currentY = 50;
-//
-//        timer = new Timer(10, this);
-//        timer.start();
-//
-//        setFocusable(true);
-//        addKeyListener(this);
-//    }
+    public TowerBuilder() {
+        setPreferredSize(new Dimension(600, 600));
+        setBackground(Color.BLACK);
+        blocks = new ArrayList<>();
+        currentX = baseX;
+        currentY = 50;
+
+        timer = new Timer(10, this);
+        timer.start();
+
+        setFocusable(true);
+        addKeyListener(this);
+    }
 //
 //    @Override
 //    public void paintComponent(Graphics g) {
