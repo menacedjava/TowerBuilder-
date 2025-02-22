@@ -31,34 +31,34 @@ public class TowerBuilder extends JPanel implements ActionListener, KeyListener 
         setFocusable(true);
         addKeyListener(this);
     }
-//
-//    @Override
-//    public void paintComponent(Graphics g) {
-//        super.paintComponent(g);
-//        g.setColor(Color.WHITE);
-//
-//        for (Block b : blocks) {
-//            b.draw(g);
-//        }
-//
-//        g.setColor(Color.RED);
-//        g.fillRect(currentX, currentY, blockWidth, blockHeight);
-//    }
-//
-//    @Override
-//    public void actionPerformed(ActionEvent e) {
-//        if (falling) {
-//            currentY += 2;
-//            if (currentY >= baseY - blocks.size() * blockHeight) {
-//                falling = false;
-//                blocks.add(new Block(currentX, currentY, blockWidth, blockHeight));
-//                currentX = rand.nextInt(500);
-//                currentY = 50;
-//                falling = true;
-//            }
-//        }
-//        repaint();
-//    }
+
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        g.setColor(Color.WHITE);
+
+        for (Block b : blocks) {
+            b.draw(g);
+        }
+
+        g.setColor(Color.RED);
+        g.fillRect(currentX, currentY, blockWidth, blockHeight);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (falling) {
+            currentY += 2;
+            if (currentY >= baseY - blocks.size() * blockHeight) {
+                falling = false;
+                blocks.add(new Block(currentX, currentY, blockWidth, blockHeight));
+                currentX = rand.nextInt(500);
+                currentY = 50;
+                falling = true;
+            }
+        }
+        repaint();
+    }
 //
 //    @Override
 //    public void keyPressed(KeyEvent e) {
